@@ -1,0 +1,231 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title GroceryGo
+    link(rel='stylesheet' href='css/mystyle.css')
+    link(rel='shortcut icon' type='image/png' href='img/favicon.png')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap')
+    link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet") 
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+
+  body
+    // Header
+    header.header
+      nav.navbar
+        .navbar-left
+          a(href='/')
+            img.nav-logo(src='/img/grocerygo.png' alt='GroceryGo Logo')
+        .navbar-center
+          form.search-form
+            input.search-bar(type='text' placeholder='Search for products')
+            button.search-button Search
+        .navbar-right
+          a(href='/wishlist')
+            img.nav-icon(src='/img/wishlist.png' alt='Wishlist' style='width: 33px; height: 33px;')
+            span.nav-text Wishlist
+          a(href='/signup')
+            img.nav-icon(src='/img/profile.png' alt='Profile' style='width: 33px; height: 33px;')
+            span.nav-text Sign Up
+
+    // Categories bar
+    .categories-bar
+      .categories-left
+        h3 Shop By Categories
+
+      .category-icons
+        // Category 1: Vegetables
+        .category-item
+          i.fa.fa-utensils
+          span Vegetables
+        // Category 2: Breakfast
+        .category-item
+          i.fa.fa-bread-slice
+          span Breakfast
+        // Category 3: Meat
+        .category-item
+          i.fa.fa-drumstick-bite
+          span Meat
+        // Category 4: Snacks
+        .category-item
+          i.fa.fa-cookie
+          span Snacks
+        // Category 5: Baby
+        .category-item
+          i.fa.fa-baby-carriage
+          span Baby Care
+        // Category 6: Pet
+        .category-item
+          i.fa.fa-paw
+          span Pet Care
+        // Category 7: Stationary
+        .category-item
+          i.fa.fa-pen
+          span Stationary
+        // Category 8: Bakery
+        .category-item
+          i.fa.fa-birthday-cake
+          span Bakery
+
+    // Hero Section
+    .hero-section
+      .hero-content
+        h1.hero-title Welcome to GroceryGo
+        p.hero-subtitle Your ultimate grocery shopping experience
+        a.hero-button(href="#") Shop Now 
+
+    // Slider for grocery items
+    .slider-container
+      h3 Browse Categories
+      .slider
+        // Slider items
+        .slider-item
+          img(src='/img/vegetables.jpg' alt='Vegetables')
+          p Vegetables
+        .slider-item
+          img(src='/img/breakfast.jpg' alt='Breakfast')
+          p Breakfast
+        .slider-item
+          img(src='/img/Meat.jpg' alt='Meat')
+          p Meat
+        .slider-item
+          img(src='/img/Snacks.jpg' alt='Snacks')
+          p Snacks
+        .slider-item
+          img(src='/img/Baby.jpg' alt='Baby')
+          p Baby Care
+        .slider-item
+          img(src='/img/Pet.jpg' alt='Pet')
+          p Pet Care
+        .slider-item
+          img(src='/img/Stationery.jpg' alt='Stationery')
+          p Stationery
+        .slider-item
+          img(src='/img/Bakery.jpg' alt='Bakery')
+          p Bakery Products
+
+    // Hero Section 1
+    .hero-section1
+      .hero-content1
+        h1.hero-title1 GroceryGo Summer Sale!
+        p.hero-subtitle1 Save Big Today!
+        a.hero-button1(href="#") Shop Now 
+
+
+//- doctype html
+//- html
+//-   head
+//-     meta(charset='UTF-8')
+//-     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+//-     title GroceryGo
+//-     link(rel='stylesheet' href='css/mystyle.css')
+//-     link(rel='shortcut icon' type='image/png' href='img/favicon.png')
+//-     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+//-     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+//-     link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap')
+//-     link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet") 
+//-     script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+
+//-   body
+//-     // Header
+//-     header.header
+//-       nav.navbar
+//-         .navbar-left
+//-           span.site-name(class='minimal-font') GroceryGo
+//-         .navbar-center
+//-           form.search-form
+//-             input.search-bar(type='text' placeholder='Search for products')
+//-             button.search-button Search
+//-         .navbar-right
+//-           a(href='/wishlist')
+//-             img.nav-icon(src='/img/wishlist.png' alt='Wishlist' style='width: 33px; height: 33px;')
+//-             span.nav-text Wishlist
+//-           a(href='/signup')
+//-             img.nav-icon(src='/img/profile.png' alt='Profile' style='width: 33px; height: 33px;')
+//-             span.nav-text Sign Up
+
+//-     // Categories bar
+//-     .categories-bar
+//-       .categories-left
+//-         h3 Shop By Categories
+
+//-       .category-icons
+//-         // Category 1: Vegetables
+//-         .category-item
+//-           i.fa.fa-utensils
+//-           span Vegetables
+//-         // Category 2: Breakfast
+//-         .category-item
+//-           i.fa.fa-bread-slice
+//-           span Breakfast
+//-         // Category 3: Meat
+//-         .category-item
+//-           i.fa.fa-drumstick-bite
+//-           span Meat
+//-         // Category 4: Snacks
+//-         .category-item
+//-           i.fa.fa-cookie
+//-           span Snacks
+//-         // Category 5: Baby
+//-         .category-item
+//-           i.fa.fa-baby-carriage
+//-           span Baby Care
+//-         // Category 6: Pet
+//-         .category-item
+//-           i.fa.fa-paw
+//-           span Pet Care
+//-         // Category 7: Stationary
+//-         .category-item
+//-           i.fa.fa-pen
+//-           span Stationary
+//-         // Category 8: Bakery
+//-         .category-item
+//-           i.fa.fa-birthday-cake
+//-           span Bakery
+
+//-     // Hero Section
+//-     .hero-section
+//-       .hero-content
+//-         h1.hero-title Welcome to GroceryGo
+//-         p.hero-subtitle Your ultimate grocery shopping experience
+//-         a.hero-button(href="#") Shop Now 
+
+//-     // Slider for grocery items
+//-     .slider-container
+//-       h3 Browse Categories
+//-       .slider
+//-         // Slider items
+//-         .slider-item
+//-           img(src='/img/vegetables.jpg' alt='Vegetables')
+//-           p Vegetables
+//-         .slider-item
+//-           img(src='/img/breakfast.jpg' alt='Breakfast')
+//-           p Breakfast
+//-         .slider-item
+//-           img(src='/img/Meat.jpg' alt='Meat')
+//-           p Meat
+//-         .slider-item
+//-           img(src='/img/Snacks.jpg' alt='Snacks')
+//-           p Snacks
+//-         .slider-item
+//-           img(src='/img/Baby.jpg' alt='Baby')
+//-           p Baby Care
+//-         .slider-item
+//-           img(src='/img/Pet.jpg' alt='Pet')
+//-           p Pet Care
+//-         .slider-item
+//-           img(src='/img/Stationery.jpg' alt='Stationery')
+//-           p Stationery
+//-         .slider-item
+//-           img(src='/img/Bakery.jpg' alt='Bakery')
+//-           p Bakery Products
+
+//-     // Hero Section 1
+//-     .hero-section1
+//-       .hero-content1
+//-         h1.hero-title1 GroceryGo Summer Sale!
+//-         p.hero-subtitle1 Save Big Today!
+//-         a.hero-button1(href="#") Shop Now 
